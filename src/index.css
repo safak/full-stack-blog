@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body{
+    
+background-color:hsl(60, 56%, 91%);
+width: 100vw;
+overflow-x: hidden;
+font-family: "Montserrat", sans-serif;
+}
