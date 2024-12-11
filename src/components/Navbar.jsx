@@ -3,11 +3,11 @@ import { useState } from "react"
 
 const Navbar = () => {
 
-    return(
+    return (
         <div className="flex">
             {/*Title*/}
             <div className="flex-1">
-            <h1 className="text-2xl">SkillSwap</h1>
+                <h1 className="text-2xl">SkillSwap</h1>
             </div>
 
             {/*This div contains the two main tabs.
@@ -22,8 +22,10 @@ const Navbar = () => {
             </div>
 
             {/*Mobile menu*/}
-            
         </div>
+        
+
+
     );
 };
 
