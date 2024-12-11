@@ -1,0 +1,22 @@
+/* App.css */
+.App {
+    background-color: #eee;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the content horizontally */
+    padding: 20px;
+  }
+  
+  .card-container {
+    display: flex;          /* Use Flexbox to display cards side by side */
+    justify-content: space-evenly; /* Distribute cards evenly */
+    /*justify-content: center;*/
+    gap: 20px;               /* Space between cards */
+    flex-wrap: wrap;         /* Wrap cards to the next line if necessary */
+    /*new line
+    max-width: 100%;*/
+    justify-content: center; /* Center the cards horizontally */
+  }
+  
