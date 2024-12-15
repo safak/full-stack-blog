@@ -1,12 +1,14 @@
 .input-wrapper{
     background-color:white;
-    width: 100%;
+    width: 50%;
     border-radius: 10px;
-    height: 2.5 rem;
+    height: 2.5rem;
     padding: 0 15px;
     box-shadow: 0px 0px 8px #ddd;
     display:flex;
     align-items: center;
+    margin: 0 auto;
+    margin-bottom: 20px;
 
 }
 

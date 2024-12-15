@@ -1,13 +1,27 @@
+import React from "react";
 
-function Card(){
-    return(
-        <div className="card">
-            <img className="card-image" src= "https://via.placeholder.com/150" alt="profile picture"></img>
-            <h2 className="card-title"> Profile 1</h2>
-            <p className="card-text"> Learning French</p>
-        </div>
-    );
+import "./Card.css";
 
-}
-
-export default Card
+export const Card = ({
+  imgSrc,
+  imgAlt,
+  title,
+  description,
+  buttonText,
+  link,
+}) => {
+  return (
+    <div className="card-container">
+      {imgSrc && imgAlt && (
+        <img src={imgSrc} alt={imgAlt} className="card-img" />
+      )}
+      {title && <h1 className="card-title">{title}</h1>}
+      {description && <p className="card-description">{description}</p>}
+      {buttonText && link && (
+        <a href={link} className="card-btn">
+          {buttonText}
+        </a>
+      )}
+    </div>
+  );
+};
