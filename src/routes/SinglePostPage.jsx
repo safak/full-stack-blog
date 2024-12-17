@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
 import Image from "../components/Image"
-import Comments from './../components/Comment';
+import Comments from './../components/Comments';
 import PostMenuActions from './../components/PostMenuActions';
 import Search from './../components/Search';
 
@@ -11,7 +11,7 @@ const SinglePostPage = () => {
             <div className="flex gap-8">
                 <div className="lg:w-3/5 flex flex-col gap-8">
                     <h1 className="text-xl md:text-3xl xl:text-4xl 2xl:text-5xl font-semibold">
-                        Title
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis, dolores.
                     </h1>
                     <div className="flex items-center gap-2 text-gray-400 text-sm">
                         <span>Written by</span>
@@ -24,7 +24,7 @@ const SinglePostPage = () => {
                 </div>
 
                 <div className="hidden lg:block w-2/5">
-                    <Image src="" w="600" className="rounded-2xl" />
+                    <Image src="postImg.jpeg" w="600" className="rounded-2xl" />
                 </div>
 
             </div>
@@ -124,7 +124,7 @@ const SinglePostPage = () => {
                         <div className="flex items-center gap-8">
 
                             <Image
-                                src=""
+                                src="userImg.jpeg"
                                 className="w-12 h-12 rounded-full object-cover"
                                 w="48"
                                 h="48"
