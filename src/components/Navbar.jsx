@@ -18,11 +18,22 @@ const Navbar = () => {
 
             <div className="flex gap-5 px-5">
                 <a href="#" className="hover:underline">Search</a>
-                <a href="#" className="hover:underline">Login</a>
+                
+                    <a href="/login" className="hover:underline">Login</a>
+                
             </div>
-
-            {/*Mobile menu*/}
+            
+            
+            {/*Mobile menu
+            <SignedOut>
+            </SignedOut>
+            
+            <SignedIn>
+                <UserButton />
+            </SignedIn>
+            */}
         </div>
+        
         
 
 
