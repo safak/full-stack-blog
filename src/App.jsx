@@ -1,37 +1,47 @@
 import Navbar from "./components/Navbar"
 import { SearchBar } from './components/SearchBar';
 import { Card }  from './components/Card.jsx';
+import ProfilePage from './components/Profile';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
 const App = () => {
   return (
     <div className=''>
       <div className="search-bar-container"></div>
       <Navbar/>
       <SearchBar/>
-      
+      <ProfilePage />
+    
+          {/* Profile Page Route */}
+         
+
       <div className="App">
       <div className="col">
         <Card
           imgSrc="https://picsum.photos/id/201/300/200"
           imgAlt="Card Image 1"
           title="Rose"
-          description="Wants to learn Spanish"
-          buttonText="Start Chatting"
+          description="Wants to learn: Spanish"
+          canTeach="Can teach: English"
+          buttonText="View Profile"
           link="card2"
         />
         <Card
           imgSrc="https://picsum.photos/id/201/300/200"
           imgAlt="Card Image 2"
-          title="Card Title"
-          description="This is the card description section. You can add more details about the product here"
-          buttonText="Learn More"
+          title="Pierre"
+          description="Wants to learn: Photography"
+          canTeach="Can teach: Web Development"
+          buttonText="View Profile"
           link="card2"
         />
         <Card
           imgSrc="https://picsum.photos/id/193/300/200"
           imgAlt="Card Image 3"
-          title="Card Title"
-          description="This is the card description section. You can add more details about the product here"
-          buttonText="Learn More"
+          title="Bob"
+          description="Wants to learn: Music"
+          canTeach="Can teach: Photography"
+          buttonText="View Profile"
           link="card2"
         />
       </div>
@@ -39,25 +49,28 @@ const App = () => {
         <Card
           imgSrc="https://picsum.photos/id/211/300/200"
           imgAlt="Card Image 1"
-          title="Card Title"
-          description="This is the card description section. You can add more details about the product here"
-          buttonText="Learn More"
+          title="Carla"
+          description="Wants to learn: Music"
+          canTeach="Can teach: Cooking"
+          buttonText="View Profile"
           link="card1"
         />
         <Card
           imgSrc="https://picsum.photos/id/250/300/200"
           imgAlt="Card Image 3"
-          title="Card Title"
-          description="This is the card description section. You can add more details about the product here"
-          buttonText="Learn More"
+          title="Emma"
+          description="Wants to learn: cooking"
+          canTeach="Can teach: Yoga"
+          buttonText="View Profile"
           link="card2"
         />
         <Card
           imgSrc="https://picsum.photos/id/250/300/200" 
           imgAlt="Card Image 3"
-          title="Card Title"
-          description="This is the card description section. You can add more details about the product here"
-          buttonText="Learn More"
+          title="John"
+          description="Wants to learn: Gardening"
+          canTeach="Can teach: English"
+          buttonText="View Profile"
           link="card2"
         />
       </div>
@@ -65,26 +78,29 @@ const App = () => {
         <Card
           imgSrc="https://picsum.photos/id/106/300/200"
           imgAlt="Card Image 1"
-          title="Card Title"
-          description="This is the card description section. You can add more details about the product here"
-          buttonText="Learn More"
+          title="Hannah"
+          description="Wants to learn: Fitness"
+          canTeach="Can teach: French"
+          buttonText="View Profile"
           link="card1"
         />
 
         <Card
           imgSrc="https://picsum.photos/id/193/300/200"
           imgAlt="Card Image 3"
-          title="Card Title"
-          description="This is the card description section. You can add more details about the product here"
-          buttonText="Learn More"
+          title="Kaitlyn"
+          description="Wants to learn: Playing Piano"
+          canTeach="Can teach: Knitting"
+          buttonText="View Profile"
           link="card2"
         />
         <Card
           imgSrc="https://picsum.photos/id/193/300/200"
           imgAlt="Card Image 3"
-          title="Card Title"
-          description="This is the card description section. You can add more details about the product here"
-          buttonText="Learn More"
+          title="Ishaan"
+          description="Wants to learn: Painting"
+          canTeach="Can teach: Cooking"
+          buttonText="View Profile"
           link="card2"
         />
         

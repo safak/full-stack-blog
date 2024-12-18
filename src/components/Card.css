@@ -21,8 +21,19 @@
 
 .card-description {
   margin: 0.5rem 5%;
+  font-size: 1rem;
+  color: #333;
+  font-weight: normal;
+  margin-bottom: 5px;
 }
-
+.card-teach-skill {
+  margin: 0.5rem 5%;
+  font-size: 1rem;
+  color: #333;
+  font-weight: normal;
+  margin-bottom: 10px;
+  
+}
 .card-btn {
   text-align: center;
   width: 90%;

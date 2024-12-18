@@ -7,6 +7,7 @@ export const Card = ({
   imgAlt,
   title,
   description,
+  canTeach,
   buttonText,
   link,
 }) => {
@@ -17,6 +18,7 @@ export const Card = ({
       )}
       {title && <h1 className="card-title">{title}</h1>}
       {description && <p className="card-description">{description}</p>}
+      {canTeach && <p className="card-teach-skill">{canTeach}</p>}
       {buttonText && link && (
         <a href={link} className="card-btn">
           {buttonText}
