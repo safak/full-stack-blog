@@ -1,8 +1,11 @@
+import PostListItem from "./PostListItem"
 
 
 const PostList = () => {
     return (
-        <div>PostList</div>
+        <div>
+            <PostListItem />
+        </div>
     )
 }
 

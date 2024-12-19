@@ -16,12 +16,11 @@ const Homepage = () => {
             <div className="flex items-center justify-between">
                 {/* titles */}
                 <div className="">
-                    <h1 className="text-gray-800 text-2xl md:text-5xl lg:text-6xl font-bold">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    <h1 className="text-gray-800 text-2xl md:text-3xl lg:text-5xl font-bold">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing. Lorem ipsum dolor sit amet.
                     </h1>
                     <p className="mt-8 text-md md:text-xl">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi
-                        rerum accusantium.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat eius tenetur voluptatum.
                     </p>
                 </div>
                 {/* animated button */}
@@ -30,8 +29,8 @@ const Homepage = () => {
                         viewBox="0 0 200 200"
                         width="200"
                         height="200"
-                        // className="text-lg tracking-widest animate-spin animatedButton"
-                        className="text-lg tracking-widest"
+                        className="text-lg tracking-widest animate-spin animatedButton"
+                    // className="text-lg tracking-widest"
                     >
                         <path
                             id="circlePath"

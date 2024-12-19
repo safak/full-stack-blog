@@ -23,8 +23,9 @@ const FeaturedPosts = () => {
           to="#"
           className="text-xl lg:text-3xl font-semibold lg:font-bold"
         >
-          Post Title
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur.
         </Link>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, quo. Hic quam dicta perferendis sit, ab quibusdam omnis doloremque qui. Fugit velit tempore doloremque! Mollitia non iste aperiam maxime corrupti!</p>
       </div>
 
       {/* Others */}
@@ -51,8 +52,9 @@ const FeaturedPosts = () => {
               to="#"
               className="text-base sm:text-lg md:text-2xl lg:text-xl xl:text-2xl font-medium"
             >
-              Post Title
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque.
             </Link>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem recusandae eos ipsum cum iusto quasi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio quidem, voluptatem iusto vel labore enim?</p>
           </div>
         </div>
 
@@ -71,15 +73,16 @@ const FeaturedPosts = () => {
             <div className="flex items-center gap-4 text-sm lg:text-base mb-4">
               <h1 className="font-semibold">03.</h1>
               <Link className="text-blue-800">Category</Link>
-              <span className="text-gray-500 text-sm">Date</span>
+              <span className="text-gray-500 text-sm">Datetime</span>
             </div>
             {/* title */}
             <Link
               to="#"
               className="text-base sm:text-lg md:text-2xl lg:text-xl xl:text-2xl font-medium"
             >
-              Post Title
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
             </Link>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. At numquam facilis inventore natus quasi, consectetur doloremque quisquam repellendus officia vel pariatur minima provident reprehenderit praesentium, corrupti, ab voluptas aspernatur voluptatem.
           </div>
         </div>
 
@@ -105,8 +108,9 @@ const FeaturedPosts = () => {
               to="#"
               className="text-base sm:text-lg md:text-2xl lg:text-xl xl:text-2xl font-medium"
             >
-              Post Title
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
             </Link>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor hic sequi porro voluptatibus, ad minima illo fuga aliquid quia corporis in veniam animi, quasi delectus iure, at similique doloribus doloremque?
           </div>
         </div>
       </div>
