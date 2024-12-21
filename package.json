@@ -10,18 +10,12 @@
     "preview": "vite preview"
   },
   "dependencies": {
-<<<<<<< HEAD
-    "@clerk/nextjs": "^6.9.6",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "react-icons": "^5.4.0",
-    "react-router-dom": "^7.1.0"
-=======
+    
     "@clerk/clerk-react": "^5.20.2",
     "react": "19.0.0-rc-66855b96-20241106",
     "react-dom": "19.0.0-rc-66855b96-20241106",
     "react-router-dom": "^7.0.2"
->>>>>>> 4879fd91bee2a6496ca73add4eaaf6d01dfc8c05
+
   },
   "devDependencies": {
     "@eslint/js": "^9.13.0",
