@@ -3,11 +3,11 @@ import { useState } from "react"
 
 const Navbar = () => {
 
-    return(
+    return (
         <div className="flex">
             {/*Title*/}
             <div className="flex-1">
-            <h1 className="text-2xl">SkillSwap</h1>
+                <h1 className="text-2xl">SkillSwap</h1>
             </div>
 
             {/*This div contains the two main tabs.
@@ -18,12 +18,25 @@ const Navbar = () => {
 
             <div className="flex gap-5 px-5">
                 <a href="#" className="hover:underline">Search</a>
-                <a href="#" className="hover:underline">Login</a>
+                
+                    <a href="/login" className="hover:underline">Login</a>
+                
             </div>
-
-            {/*Mobile menu*/}
             
+            
+            {/*Mobile menu
+            <SignedOut>
+            </SignedOut>
+            
+            <SignedIn>
+                <UserButton />
+            </SignedIn>
+            */}
         </div>
+        
+        
+
+
     );
 };
 
