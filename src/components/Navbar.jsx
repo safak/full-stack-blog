@@ -17,7 +17,7 @@ const Navbar = () => {
             padding on right and left sides of 5 px*/}
 
             <div className="flex gap-5 px-5">
-                <a href="#" className="hover:underline">Search</a>
+                <a href="/search" className="hover:underline">Search</a>
                 
                     <a href="/login" className="hover:underline">Login</a>
                 
