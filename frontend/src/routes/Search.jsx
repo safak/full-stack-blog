@@ -1,15 +1,14 @@
-import Navbar from "./components/Navbar"
-import { SearchBar } from './components/SearchBar';
-import { Card }  from './components/Card.jsx';
-import ProfilePage from './components/Profile';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-const TempSearchPage = () => {
-    <div>
-        <div className="search-bar-container"></div>
-      <Navbar/>
+import { SearchBar } from '../components/SearchBar.jsx';
+import { Card }  from '../components/Card.jsx';
+
+
+const Search = () => {
+    return(
+        <div>
+             <div className="search-bar-container"></div>
+
       <SearchBar/>
-      <ProfilePage />
     
           {/* Profile Page Route */}
          
@@ -23,7 +22,7 @@ const TempSearchPage = () => {
           description="Wants to learn: Spanish"
           canTeach="Can teach: English"
           buttonText="View Profile"
-          link="card2"
+          link="/view-profile"
         />
         <Card
           imgSrc="https://picsum.photos/id/201/300/200"
@@ -32,7 +31,7 @@ const TempSearchPage = () => {
           description="Wants to learn: Photography"
           canTeach="Can teach: Web Development"
           buttonText="View Profile"
-          link="card2"
+          link="/view-profile"
         />
         <Card
           imgSrc="https://picsum.photos/id/193/300/200"
@@ -41,7 +40,7 @@ const TempSearchPage = () => {
           description="Wants to learn: Music"
           canTeach="Can teach: Photography"
           buttonText="View Profile"
-          link="card2"
+          link="/view-profile"
         />
       </div>
       <div className="col">
@@ -52,7 +51,7 @@ const TempSearchPage = () => {
           description="Wants to learn: Music"
           canTeach="Can teach: Cooking"
           buttonText="View Profile"
-          link="card1"
+          link="/view-profile"
         />
         <Card
           imgSrc="https://picsum.photos/id/250/300/200"
@@ -61,7 +60,7 @@ const TempSearchPage = () => {
           description="Wants to learn: cooking"
           canTeach="Can teach: Yoga"
           buttonText="View Profile"
-          link="card2"
+          link="/view-profile"
         />
         <Card
           imgSrc="https://picsum.photos/id/250/300/200" 
@@ -70,7 +69,7 @@ const TempSearchPage = () => {
           description="Wants to learn: Gardening"
           canTeach="Can teach: English"
           buttonText="View Profile"
-          link="card2"
+          link="/view-profile"
         />
       </div>
       <div className="col">
@@ -105,5 +104,9 @@ const TempSearchPage = () => {
         
       </div>
     </div>
-    </div>
-}
+        </div>
+  );
+};
+
+export default Search
+

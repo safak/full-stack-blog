@@ -2,6 +2,7 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
 import Homepage from './routes/Homepage.jsx';
+import Search from './routes/Search.jsx';
 import ProfileSetUp from './routes/ProfileSetUp.jsx';
 import Login from './routes/Login.jsx';
 import Register from './routes/Register.jsx';
@@ -11,6 +12,7 @@ import {
 } from "react-router-dom";
 import MainLayout from './layouts/MainLayout.jsx';
 import { ClerkProvider } from '@clerk/clerk-react';
+import ViewProfile from './routes/ViewProfile.jsx';
 
 // Import your Publishable Key
 const PUBLISHABLE_KEY = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY
@@ -22,23 +24,31 @@ if (!PUBLISHABLE_KEY) {
 
 const router = createBrowserRouter([
   {
-    element: <MainLayout/>,
-    children:[
+    element: <MainLayout />,
+    children: [
       {
         path: "/",      //it doesn't work with just the /
-        element: <Homepage/>
+        element: <Homepage />
       },
       {
         path: "/login",
-        element: <Login/>,
+        element: <Login />,
       },
       {
         path: "/register",
-        element: <Register/>,
+        element: <Register />,
       },
       {
         path: "/profile-setup",
-        element: <ProfileSetUp/>,
+        element: <ProfileSetUp />,
+      },
+      {
+        path: "/search",
+        element: <Search />,
+      },
+      {
+        path: "/view-profile",
+        element: <ViewProfile/>,
       },
     ]
   }
@@ -46,10 +56,10 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    
+
     <ClerkProvider publishableKey={PUBLISHABLE_KEY}>
-    <RouterProvider router={router} />
+      <RouterProvider router={router} />
     </ClerkProvider>
-    
+
   </StrictMode>,
 )
