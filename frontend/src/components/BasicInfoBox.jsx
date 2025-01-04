@@ -10,12 +10,6 @@ const BasicInfoBox = () => {
                     placeholder="Enter your name"
                     className="w-4/5 mb-4 bg-gray-200 rounded-xl py-2 px-4 text-black"
                 />
-               <h3 className="mb-2">Email</h3>
-                <input
-                    type="email"
-                    placeholder="Enter your email"
-                    className="w-4/5 mb-4 bg-gray-200 rounded-xl py-2 px-4 text-black"
-                />
             </div>
         </div>
     );
