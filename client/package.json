@@ -17,6 +17,7 @@
     "imagekitio-react": "^4.2.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-html-parser": "^2.0.2",
     "react-infinite-scroll-component": "^6.1.0",
     "react-quill-new": "^3.3.3",
     "react-router-dom": "^7.1.1",

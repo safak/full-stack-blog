@@ -3,10 +3,10 @@
 @tailwind utilities;
 
 body{
-    background-color: #e6e6ff;
+    background-color: #CFD8DC;
     width: 100vw;
     overflow-x: hidden;
-    font-family: "Monsterrat", sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 
 .animatedButton{

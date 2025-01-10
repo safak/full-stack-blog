@@ -39,7 +39,10 @@ const WritePage = () => {
         onSuccess: (res) => {
             toast.success("Post has been created");
             navigate(`/${res.data.slug}`);
-        }
+        },
+        onError: (err) => {
+            toast.error(err.response.data);
+        },
     })
 
     if (!isLoaded) {
@@ -66,36 +69,36 @@ const WritePage = () => {
     }
 
     return (
-        <div className="h-[calc(100vh-64px)] md:h-[calc(100vh-80px)] flex flex-col gap-6">
-            <h1 className="text-xl font-light">Create a New Post</h1>
+        <div className="mt-8 h-[calc(100vh-64px)] md:h-[calc(100vh-80px)] flex flex-col gap-6">
+            <h1 className="text-xl font-light font-medium text-primary-text-color">Create a New Post</h1>
             <form onSubmit={handleSubmit} className="flex flex-col gap-6 flex-1 mb-6">
                 <Upload type="image" setProgress={setProgress} setData={setCover}>
                     <button 
                         type="button"
-                        className="w-max p-2 shadow-md rounded-xl text-sm text-gray-500 bg-white"
+                        className="w-max p-2 shadow-md rounded-xl text-sm text-primary-text-color bg-white"
                     >
                         Add a cover image
                     </button>
                 </Upload>
                 <input 
-                    className="text-4xl font-semibold bg-transparent outline-none" 
+                    className="text-4xl font-semibold bg-transparent outline-none text-primary-text-color" 
                     type="text" 
                     placeholder="My Awesome Story"
                     name="title"
                 />
                 <div className="flex items-center gap-4">
-                    <label className="text-sm" htmlFor="category">Choose a category:</label>
+                    <label className="text-sm text-primary-text-color" htmlFor="category">Choose a category:</label>
                     <select 
                         className="p-2 rounded-xl bg-white shadow-md" 
                         name="category" 
                         id="category"
                     >
-                        <option value="general">General</option>
-                        <option value="web-design">Web Design</option>
-                        <option value="development">Development</option>
+                        <option value="">General</option>
+                        <option value="frontend">Frontend</option>
+                        <option value="backend">Backend</option>
                         <option value="database">Database</option>
-                        <option value="search-engine">Search Engine</option>
-                        <option value="marketing">Marketing</option>
+                        <option value="cloud-services">Cloud Services</option>
+                        <option value="development-tools">Development Tools</option>
                     </select>
                 </div>
                 <textarea 
@@ -125,9 +128,8 @@ const WritePage = () => {
                     disabled={mutation.isLoading || progress > 0 && progress < 100} 
                     className="bg-blue-800 text-white font-medium rounded-xl mt-4 p-2 w-36 disabled:bg-blue-400 disabled:cursor-not-allowed"
                 >
-                    {mutation.isLoading ? "Loading..." : "Send"}
+                    {mutation.isLoading ? `Loading: ${progress}%` : "Send"}
                 </button>
-                {"Progress: " + progress}
                 {mutation.isError && <span>{mutation.error.message}</span>}
             </form>
         </div>
