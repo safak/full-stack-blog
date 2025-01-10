@@ -23,9 +23,9 @@ const FeaturedPosts = () => {
     if (!posts || posts.length === 0) return;
 
     return (
-        <div className="mt-8 flex flex-col lg:flex-row gap-8">
+        <div className="rounded-2xl bg-white p-8 flex flex-col lg:flex-row gap-8 shadow-xl">
             <div className="w-full lg:w-1/2 flex flex-col gap-4">
-                {posts[0].img && <Image src="featured1.jpeg" className="rounded-3xl object-cover" w="895"/>}
+                {posts[0].img && <Image src={posts[0].img} className="rounded-3xl object-cover" w="795" h="500"/>}
                 <div className="flex items-center gap-4">
                     <h1 className="font-semibold lg:text-lg">01.</h1>
                     <Link className="text-blue-800 lg:text-lg">{posts[0].category}</Link>
@@ -36,7 +36,7 @@ const FeaturedPosts = () => {
             <div className="w-full lg:w-1/2 flex flex-col gap-4">
                 {posts[1] && <div className="lg:h-1/3 flex justify-between gap-4">
                     <div className="w-1/3 aspect-video">
-                    {posts[1].img && <Image src="featured2.jpeg" className="rounded-3xl object-cover w-full h-full" w="298"/>}
+                    {posts[1].img && <Image src={posts[1].img} className="rounded-3xl object-cover w-full h-full" w="298" />}
                     </div>
                     <div className="w-2/3">
                         <div className="flex items-center gap-4 text-sm lg:text-base">
@@ -49,7 +49,7 @@ const FeaturedPosts = () => {
                 </div>}
                 {posts[2] && <div className="lg:h-1/3 flex justify-between gap-4">
                     <div className="w-1/3 aspect-video">
-                    {posts[2].img && <Image src="featured3.jpeg" className="rounded-3xl object-cover w-full h-full" w="298" />}
+                    {posts[2].img && <Image src={posts[2].img} className="rounded-3xl object-cover w-full h-full" w="398" />}
                     </div>
                     <div className="w-2/3">
                         <div className="flex items-center gap-4 text-sm lg:text-base">
@@ -62,7 +62,7 @@ const FeaturedPosts = () => {
                 </div>}
                 {posts[3] && <div className="lg:h-1/3 flex justify-between gap-4">
                     <div className="w-1/3 aspect-video">
-                    {posts[3].img && <Image src="featured4.jpeg" className="rounded-3xl object-cover w-full h-full" w="298"/>}
+                    {posts[3].img && <Image src={posts[3].img} className="rounded-3xl object-cover w-full h-full" w="398" />}
                     </div>
                     <div className="w-2/3">
                         <div className="flex items-center gap-4 text-sm lg:text-base">

@@ -1,7 +1,6 @@
 import User from "../models/user.model.js";
 
 export const getUserSavedPosts = async (req, res) => {
-    console.log(req.auth.userId);
     const clerkUserId = req.auth.userId;
 
     if (!clerkUserId) {
@@ -9,8 +8,6 @@ export const getUserSavedPosts = async (req, res) => {
     }
 
     const user = await User.findOne({ clerkUserId });
-
-    console.log(user);
 
     res.status(200).json(user.savedPosts);
 }

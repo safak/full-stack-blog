@@ -17,7 +17,7 @@ const Image = ({src, className, alt, w, h}) => {
                     height:h
                 }
             ]}
-            />
+        />
     );
 };
 

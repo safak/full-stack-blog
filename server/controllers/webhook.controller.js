@@ -25,7 +25,6 @@ export const clerkWebHook = async (req, res) => {
     }
 
     if (evt.type === "user.created") {
-        console.log("creating user");
         const existingUser = await User.findOne({ clerkUserId: evt.data.id });
 
         if (existingUser) {
@@ -40,13 +39,11 @@ export const clerkWebHook = async (req, res) => {
             email: evt.data.email_addresses[0].email_address,
             img: evt.data.profile_img_url,
         });
-        
-        console.log(newUser);
+
         await newUser.save();
     }
 
     if (evt.type === "user.deleted") {
-        console.log("deleting user");
         const existingUser = await User.findOne({ clerkUserId: evt.data.id });
 
         if (!existingUser) {
@@ -63,8 +60,6 @@ export const clerkWebHook = async (req, res) => {
             await Post.deleteMany({ user: deletedUser._id });
             await Comment.deleteMany({ user: deletedUser._id });
         }
-
-        console.log(deletedUser);
     }
 
     return res.status(200).json({

@@ -1,23 +1,17 @@
 import { Link } from "react-router-dom";
-import MainCategories from "../components/MainCategories";
 import FeaturedPosts from "../components/FeaturedPosts";
 import PostList from "../components/PostList";
 
 const HomePage = () => {
     return (
-        <div className="mt-4 flex flex-col gap-4">
-            <div className="flex gap-4">
-                <Link to="/">Home</Link>
-                <span>/</span>
-                <span className="text-blue-800">Bogs and Articles</span>
-            </div>
-            <div className="flex items-center justify-between">
+        <div className="mt-8 flex flex-col gap-4">
+            <div className="rounded-2xl bg-white shadow-lg p-6 flex items-center justify-between">
                 <div className="">
-                    <h1 className="text-gray-800 text-2xl md:text-5xl lg:text-6xl font-bold">
-                        Articles
+                    <h1 className="text-primary-text-color text-xl md:text-4xl lg:text-5xl font-bold">
+                        Home
                     </h1>
-                    <p className="mt-8 text-md md:text-xl">
-                        This is a list of articles that you can read
+                    <p className="text-secondary-text-color font-medium mt-6 text-md md:text-xl">
+                        Explore and share all things tech related.
                     </p>
                 </div>
                 <Link to="/write" className=" hidden md:block relative">
@@ -57,10 +51,12 @@ const HomePage = () => {
                     </button>
                 </Link>
             </div>
-            <MainCategories />
-            <FeaturedPosts />
-            <div className="">
-                <h1 className="my-8 text-2xl text-gray-600">Recent Posts</h1>
+            <div className="mt-4">
+                <h1 className="text-2xl text-primary-text-color mb-4">Featured Posts</h1>
+                <FeaturedPosts />
+            </div>
+            <div className="mt-4">
+                <h1 className="text-2xl text-primary-text-color mb-4">Recent Posts</h1>
                 <PostList />
             </div>
         </div>
