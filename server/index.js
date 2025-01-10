@@ -6,8 +6,10 @@ import userRouter from "./routes/user.route.js";
 import postRouter from "./routes/post.route.js";
 import commentRouter from "./routes/comment.route.js";
 import webhookRouter from "./routes/webhook.route.js";
+import dotenv from "dotenv";
 
-const app = express();
+dotenv.config();
+const app = express();  
 
 app.use(cors(process.env.CLIENT_URL));
 app.use(clerkMiddleware());
