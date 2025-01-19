@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+    background-color: #f1f1f1;
+    overflow-x: hidden;
+    width: 100vw;
+    font-family: "Montserrat", sans-serif;
+}
